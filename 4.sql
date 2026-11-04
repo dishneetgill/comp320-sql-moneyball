@@ -1,0 +1,1 @@
+select players.first_name, players.last_name, salaries.salary from salaries join players on salaries.player_id = players.id where salaries.year = 2001 order by salaries.salary asc, players.first_name asc, players.last_name asc, players.id asc limit 50;

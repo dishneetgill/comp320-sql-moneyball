@@ -1,0 +1,1 @@
+select distinct teams.name from performances join players on performances.player_id = players.id join teams on performances.team_id = teams.id where players.first_name = 'Steve' and players.last_name = 'Parris';

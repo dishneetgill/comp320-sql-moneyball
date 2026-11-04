@@ -1,0 +1,1 @@
+select salaries.salary from performances join salaries on performances.player_id = salaries.player_id and performances.year = salaries.year where performances.year = 2001 order by performances.hr desc limit 1;

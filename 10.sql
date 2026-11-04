@@ -1,0 +1,1 @@
+select players.first_name, players.last_name, salaries.salary, performances.hr, salaries.year from players join salaries on players.id = salaries.player_id join performances on players.id = performances.player_id and salaries.year = performances.year order by players.id asc, salaries.year desc, performances.hr desc, salaries.salary desc;
